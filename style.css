@@ -24,3 +24,14 @@
 .square4, .square5, .square6, .square7, .square8, .square9{
     border-top: 2px solid black;
 }
+.turnCounter{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 800;
+}
+.clear{
+    display: block;
+    max-width: 300px;
+    margin: 40px auto;
+}
