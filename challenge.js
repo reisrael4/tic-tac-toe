@@ -11,10 +11,12 @@ function colorChange(e){
     }else{
         background = 'red'
     }
+    square[i].removeEventListener('click', colorChange)
     }
 button.addEventListener('click', clearBoard);
 function clearBoard(e){
     e.preventDefault();
-    square[i].style.backgroundColor = 'white'
+    square[i].style.backgroundColor = 'white';
+    background = 'red';
 }
 }
