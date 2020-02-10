@@ -5,25 +5,15 @@
     margin: auto;
     width: 450px;
     height: 450px;
+    grid-gap: 4px;
+    background: black;
 }
 .square{
     grid-column: 1fr;
     grid-row: 1fr;
-    grid-gap: none;
     background: white;
 }
-#square1, #square2, #square3, #square4, #square5, #square6{
-    border-bottom: 2px solid black;
-}
-#square1, #square2, #square4, #square5, #square7, #square8{
-    border-right: 2px solid black;
-}
-#square2, #square3, #square5, #square6, #square8, #square9{
-    border-left: 2px solid black;
-}
-#square4, #square5, #square6, #square7, #square8, #square9{
-    border-top: 2px solid black;
-}
+
 .turnCounter{
     text-align: center;
     margin-bottom: 20px;
