@@ -40,22 +40,22 @@ for(let i=0; i<square.length; i++){
         }
         // console.log(e.target.id)
         square[i].removeEventListener('click', colorChange)
-        
         }
     function checkForWinner(color){
+            if(red.length>=3 || blue.length>= 3){
             for(let i=0; i<win.length; i++){
                 let count = 0;
                 for(let j=0; j<color.length; j++){
                     if(color.includes(win[i][j]) === true){
                         count = count + 1;
                         if(count === 3){
-                            console.log(colorName + ' wins!' )
+                            alert(colorName + ' wins!' )
                         }
                     }
                 }
-         }
+            }
+        }
     }
-    // if(red.length>=3 || blue.length>= 3){}
     button.addEventListener('click', clearBoard);
     function clearBoard(e){
         e.preventDefault();
@@ -64,6 +64,8 @@ for(let i=0; i<square.length; i++){
         counter.innerText = "Red's Turn";
         counter.style.color = 'red';
         square[i].addEventListener('click', colorChange);
+        red = [];
+        blue = [];
         }
     }
 
