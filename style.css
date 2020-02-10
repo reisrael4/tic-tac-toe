@@ -1,0 +1,26 @@
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: auto;
+    width: 450px;
+    height: 450px;
+}
+.square{
+    grid-column: 1fr;
+    grid-row: 1fr;
+    /* border: 1px solid black; */
+    grid-gap: none;
+}
+.square1, .square2, .square3, .square4, .square5, .square6{
+    border-bottom: 2px solid black;
+}
+.square1, .square2, .square4, .square5, .square7, .square8{
+    border-right: 2px solid black;
+}
+.square2, .square3, .square5, .square6, .square8, .square9{
+    border-left: 2px solid black;
+}
+.square4, .square5, .square6, .square7, .square8, .square9{
+    border-top: 2px solid black;
+}
